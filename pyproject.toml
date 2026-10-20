@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cropnav"
+version = "0.1.0"
+description = "Coarse-to-fine token compression for long-horizon UAV vision-and-language navigation"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+dependencies = ["torch>=2.0"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.optional-dependencies]
+train = [
+    "torch==2.0.1", "torchvision==0.15.2", "numpy<2",
+    "transformers==4.31.0", "Pillow>=9", "sentencepiece>=0.1.99",
+    "deepspeed==0.9.5", "accelerate==0.21.0",
+]
+backbones = ["peft==0.4.0", "timm==0.6.13"]
+
+[project.scripts]
+cropnav-train = "cropnav.train:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["cropnav*"]
+
+[tool.setuptools]
+license-files = ["LICENSE", "NOTICE"]

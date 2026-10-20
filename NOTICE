@@ -1,0 +1,18 @@
+CROP-NAV
+
+This distribution contains a compact research implementation of CROP-NAV.
+
+Parts of the context-attention assembly, trajectory encoder, recurrent slot
+update structure, view scorer, token scorer, and waypoint head were adapted
+from the Apache-2.0 LLaMA-UAV source tree used for this work, including its
+LLaMA-VID/LLaVA and LongFly components.
+
+The upstream language-model source carries the following notice:
+Copyright 2023 Haotian Liu
+
+Modifications in this distribution include modular APIs, explicit recurrent
+state, physical directional routing, paper-defined IGTA residual voting and
+attention weighting, spatial-only token selection, and simplified prompt
+packing. This distribution does not include upstream pretrained model
+implementations, pretrained model weights, or datasets. Their respective
+licenses apply when those assets are supplied separately.

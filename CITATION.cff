@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this implementation, please cite the accompanying CROP-NAV manuscript."
+type: software
+title: "CROP-NAV: Coarse-to-Fine Token Compression for Long-Horizon UAV Vision-and-Language Navigation"
+version: 0.1.0
+authors:
+  - family-names: Yao
+    given-names: Fuming
+  - family-names: Zhang
+    given-names: Ye
+  - family-names: Wang
+    given-names: Hanyun
+  - family-names: Guo
+    given-names: Yulan
+license: Apache-2.0

@@ -1,0 +1,9 @@
+{
+  "implementation_root": "/path/to/pretrained-implementation/Model/LLaMA-UAV",
+  "language_model": "/path/to/language-checkpoint",
+  "navigation_checkpoint": "/path/to/navigation-adapter-checkpoint",
+  "vision_checkpoint": "/path/to/eva_vit_g.pth",
+  "image_processor": "/path/to/clip-patch14-224",
+  "view_selector_checkpoint": "/path/to/view-selector-checkpoint",
+  "bert_model": "bert-base-uncased"
+}
